@@ -28,7 +28,7 @@ const correct = () => {
     guess = false;
     displayScore++
     score.textContent = displayScore;
-    correctMessage.textContent = "Correct!";
+    correctMessage.style.opacity = "1";
     // changed to forEach to make more robust and tidy
     allBoxes.forEach((box) => {
         box.style.backgroundColor = newColour;
@@ -38,7 +38,7 @@ const correct = () => {
 
 const resetGame = () => {
     guess = true;
-    correctMessage.textContent = "";
+    correctMessage.style.opacity = "0";
     // same changes. seems to work the same, unsure if there is any disadvantage?
     allBoxes.forEach((box) => {
         box.style.opacity = "1";

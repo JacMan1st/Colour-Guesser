@@ -1,4 +1,5 @@
 * {
+    color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -16,7 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: flex-end; */
     height: 190px;
     width: 100%;
 }
@@ -35,28 +35,46 @@ body {
 #controlBar {
     background-color:rgb(26, 26, 26);
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    /* width: 300px; */
     width: 100%;
 }
 
 #newColrBtn {
+    font-size: large;
     background-color: rgb(80, 80, 80);
     border:groove;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
     cursor: pointer;
+    margin-left: 300px;
+}
+
+#newColrBtn:hover {
+    border: black;
+    box-shadow: 0px 0px 15px red;
+}
+
+#scoreP {
+    font-size: large;
+    background-color: rgb(80, 80, 80);
+    border:groove;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 300px;
+}
+
+#correctMessage {
+    font-size: 30px;
 }
 
 #optionContainer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 480px;
     height: 330px;
     border: 30px groove silver;
@@ -66,14 +84,6 @@ body {
     background-color: white;
 }
 
-#newColrBtn:hover {
-    border: black;
-    box-shadow: 0px 0px 15px red;
-}
-
-#score, p {
-    color: white;
-}
 
 .box {
     height: 150px;
